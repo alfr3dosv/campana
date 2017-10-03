@@ -1,0 +1,31 @@
+{
+  "name": "formbase",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Better default styles for common input elements",
+  "main": "dist/formbase.min.css",
+  "keywords": [
+    "form",
+    "text",
+    "textbox",
+    "textarea",
+    "input",
+    "checkbox",
+    "radio",
+    "control",
+    "custom"
+  ],
+  "ignore": [
+    "**/.*",
+    "demos",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/formbase",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/formbase.git"
+  }
+}

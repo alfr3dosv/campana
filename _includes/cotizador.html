@@ -1,0 +1,240 @@
+<div class="container">
+	<!--DATOS PERSONALES-->
+	<section>
+		<div class="col-md-6">
+			<form role='form'>
+				<fieldset>
+					<legend>Direccion</legend>
+					<label>Nombre</label>
+					<input type="text" class="form-control"></input>
+					<label>Telefono</label>
+					<input type="text" class="form-control"></input>
+					<label>Correo</label>
+					<input type="text" class="form-control"></input>
+					<label>Direccion</label>
+					<input type="text" class="form-control"></input>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+	<!--DIMENSIONES-->
+	<section>
+		<div class="col-md-6" id="Dimensiones">
+			<fieldset onchange="cotizador.actualizarDimensiones();">
+				<legend>
+					Dimensiones
+					<span id="sumatoria"></span>
+				</legend>
+				<label>Pared 1</label>
+				<input type="text" class="form-control metrosMas"></input>
+				<label>Pared 2</label>
+				<input type="text" class="form-control metrosMas"></input>
+				<label>Pared 3</label>
+				<input type="text" class="form-control metrosMas"></input>
+				<label>Barra(Inc Gab)</label>
+				<input type="text" class="form-control metrosMas"></input>
+				<hr>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox"> Estufa</input></span>
+					<input type="text" class="form-control metrosMenos" placeholder="76-50cm"></input>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox"> Refrigerador</input></span>
+					<input type="text" class="form-control metrosMenos" placeholder="70cm"></input>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox"> Esquina</input></span>
+					<input type="text" class="form-control metrosMenos" placeholder="60-30cm"></input>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox"> Ventana</input></span>
+					<input type="text" class="form-control metrosMenos" placeholder="90cm"></input>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox"> Otros</input></span>
+					<input type="text" class="form-control metrosMenos"></input>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<!--MATERIAL-->
+	<section>
+		<div class="col-md-12" id="material">
+			<fieldset>
+				<legend>
+					Material
+					<span id="sumatoria"></span>
+				</legend>
+				<table id="tabla-material">
+					<tr>
+						<th>
+							<span>Metros totales</span>
+							<label>Color</label>
+							<input type="number" class="form-control xmtr" data-data='?' onchange="testThis(this);"></input>
+						</th>
+						<th>
+							<span class="newline">Alcena Sup</span>
+							<span> Cto x Mt </span>
+						</th>
+						<th>
+							<span>Importe</span>
+						</th>
+						<th>
+							<span class="newline">Gab Piso</span>
+							<span>Cto x Mtr</span>
+						</th>
+						<th>
+							<span>Importe</span>
+						</th>
+						<th>
+							<span>Total Gab</span>
+						</th>
+						<th>
+							<span>Otros gastos</span>
+						</th>
+						<th>
+							<span>Gran Total</span>
+						</th>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+	</section>
+	<!--CUBIERTAS-->
+	<section>
+		<div class="col-md-12" id="cubiertas">
+			<fieldset>
+				<legend>
+					Cubiertas
+					<span id="sumatoria"></span>
+				</legend>
+				<table id="tabla-cubierta" onchange="cotizador.actualizarCostoCubiertas();">
+					<tr>
+						<th>Cubiertas</th>
+						<th>1.22</th>
+						<th>1.83</th>
+						<th>2.44</th>
+						<th>3.05</th>
+						<th>3.66</th>
+						<th>
+							<span>Importe</span>
+						</th>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+	</section>
+	<!---->
+	<section>
+		<div class="col-md-3" id="tarja">
+			<fieldset>
+				<legend>
+					Tarja
+					<span id="sumatoria"></span>
+				</legend>
+				<div class="opciones">
+					<label><input class="" type="radio" name="tarja" data-precio="800" class="form-contrl"> Sencilla</input></label>
+					<label><input type="radio" name="tarja" data-precio="1000"> Doble</input></label>
+					<label><input type="radio" name="tarja" data-precio="300"></input> Proprcionada por el cliente</label>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<section>
+		<div class="col-md-3">
+			<fieldset>
+				<legend>
+					Estufa
+				</legend>
+				<div class="opciones">
+					<label><input type="radio" name="tarja" > Normal</input></label>
+					<label><input type="radio" name="tarja" > Empotrada</input></label>
+					<label><input type="radio" name="tarja" > Parrila</input></label>
+					<hr>
+					<label><input type="checkbox"> Proporciona el cliente</input></label>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<!--JALADERAS-->
+	<section>
+		<div class="col-md-3" id="jaladeras">
+			<fieldset>
+				<legend>
+					Jaladeras
+					<span id="sumatoria"></span>
+				</legend>
+				<div class="opciones">
+					<div id="opciones-j">
+						<label>Alacenas</label>
+						<div class="input-group">
+							<input type="number" class="form-control alacena"></input><span class="input-group-addon">m</span>
+						</div>
+						<label>Gabinetes</label>
+						<div class="input-group">
+							<input type="number" class="form-control gabinete"></input><span class="input-group-addon">m</span>
+						</div>
+						<label><input type="radio" name="tipo-j" data-precio="0"> Barra de acero de 12cms</input></label>
+						<label><input type="radio" name="tipo-j" data-precio="45"> Aluminio 15cm</input></label>
+						<label><input type="radio" name="tipo-j" data-precio="62"> Aluminio 17cm</input></label>
+						<hr>
+					</div>
+					<label><input type="checkbox" id> Proporciona el cliente</input></label>
+					<div id="personalizado-jalderas" class="input-group oculto">
+						<input type="text" class="form-control"><span class="input-group-addon">Costo</span>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<section>
+		<div class="col-md-3" id="instalacion">
+			<fieldset>
+				<legend>Instalacion <span id="sumatoria"></span></legend>
+				<div class="opciones" id="tipo-instalacion">
+					<span>Tipo de instalación</span>
+					<label><input type="radio" name="tipo-instalacion" data-insta="recta"> Recta</label>
+					<label><input type="radio" name="tipo-instalacion" data-insta="escuadra"> Escuadra</label>
+					<div id="opciones-instalacion">
+						<hr>
+						<div id="insta-recta" class="oculto">
+							<label><input type="radio" name="insta-recta" data-precio="900"> 2.5</label>
+							<label><input type="radio" name="insta-recta" data-precio="1300"> 3.5</label>
+							<label><input type="radio" name="insta-recta" data-precio="1500"> 4.5</label>
+						</div>
+						<div id="insta-escuadra" class="oculto">
+							<label><input type="radio" name="insta-escuadra" data-precio="1500"> 3x2</label>
+							<label><input type="radio" name="insta-escuadra" data-precio="1700"> 3x3</label>
+							<label><input type="radio" name="insta-escuadra" data-precio="1900"> 3x2x2</label>	  <label><input type="radio" name="insta-escuadra" data-precio="2300"> 3x3x3</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<!--OTROS GASTOS-->
+	<section>
+		<div class="col-md-4 opciones" id="barra">
+			<fieldset>
+				<legend>
+					<input type="checkbox" data-precio> Barra
+				</legend>
+				<div class="opciones">
+					<label><input type="checkbox"><span>Pata de acero</span><input type="number" class="form-control" data-precio=""></input></label>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+	<!--TOTAL-->
+	<section>
+		<div class="col-md-12">
+			<hr>
+			<h2>Subtotal:</h2><h2 id="subtotal"></h2>
+		</div>
+	</section>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	cotizador.init();
+});
+</script>
