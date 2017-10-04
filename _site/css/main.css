@@ -373,3 +373,17 @@ pre {
   float: right;
   display: inline-block;
   width: 350px; }
+
+.preview {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.preview img {
+  width: auto;
+  height: 10em;
+  border-radius: 5px; }
+
+.no-display {
+  display: none; }
