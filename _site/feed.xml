@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rinnovo</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Rinnovo fabricante de cocinas y closets
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Oct 2017 07:05:44 -0500</pubDate>
-    <lastBuildDate>Wed, 04 Oct 2017 07:05:44 -0500</lastBuildDate>
+    <link>https://alfr3dosv.github.io/rinnovo/</link>
+    <atom:link href="https://alfr3dosv.github.io/rinnovo/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Nov 2017 17:23:15 -0600</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2017 17:23:15 -0600</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 07 Mar 2017 18:22:28 -0600</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2017/03/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2017/03/07/welcome-to-jekyll.html</guid>
+        <link>https://alfr3dosv.github.io/rinnovo/jekyll/update/2017/03/07/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://alfr3dosv.github.io/rinnovo/jekyll/update/2017/03/07/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
