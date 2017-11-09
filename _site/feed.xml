@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rinnovo</title>
-    <description>Rinnovo fabricante de cocinas y closets
+    <title>Parques regios</title>
+    <description>Parques regios una organización sin fines de lucro que busca mejorar la calidad de vida de las personas. Al reabilitar parque como centros de convivencia y ejercicio.
 </description>
-    <link>https://alfr3dosv.github.io/rinnovo/</link>
-    <atom:link href="https://alfr3dosv.github.io/rinnovo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Nov 2017 17:23:15 -0600</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2017 17:23:15 -0600</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 08 Nov 2017 18:22:35 -0600</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2017 18:22:35 -0600</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 07 Mar 2017 18:22:28 -0600</pubDate>
-        <link>https://alfr3dosv.github.io/rinnovo/jekyll/update/2017/03/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://alfr3dosv.github.io/rinnovo/jekyll/update/2017/03/07/welcome-to-jekyll.html</guid>
+        <link>/jekyll/update/2017/03/07/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2017/03/07/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
