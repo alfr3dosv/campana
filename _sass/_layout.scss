@@ -16,6 +16,14 @@ box-shadow:         1px 3px 4px 0px rgba(50, 50, 50, 0.4);
     //@extend .shadows;
 }
 
+header {
+    position: fixed !important;
+    background: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.50);
+box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.50);
+}
 .site-title {
     font-size: 26px;
     font-weight: 300;
@@ -103,10 +111,12 @@ box-shadow:         1px 3px 4px 0px rgba(50, 50, 50, 0.4);
     background-position: center;
     min-height: 350px;
     width: 100%;
-    position: absolute;
+    height: auto;
     text-align: center;
+    padding-top: 56px;
     h1 {
-        padding-top: 50px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         color: #fff;
         font-weight: 100;
         font-size: 60px;
@@ -188,7 +198,6 @@ box-shadow:         1px 3px 4px 0px rgba(50, 50, 50, 0.4);
  */
 .page-content {
     padding: $spacing-unit 0;
-    padding-top: 350px;
 }
 
 .page-heading {
